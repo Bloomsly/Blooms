@@ -313,6 +313,13 @@ function initSearch() {
       currentSearch = this.value.trim();
       renderProducts();
     });
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        if (!document.getElementById("productGridContainer")) {
+          window.location.href = "shop.html";
+        }
+      }
+    });
   }
 }
 
