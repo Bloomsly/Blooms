@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomly | Online Flower</title>
+  <meta name="description"
+    content="Send fresh flowers & handcrafted floral bouquets online across 600+ cities in India. Flower delivery guaranteed with Bloomly.">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Top Specialty Strip -->
+  <div class="speciality-strip">
+    <div class="container d-flex justify-content-center">
+      <ul class="speciality-items m-0 p-0">
+        <li><span>🚚</span> Delivery in 7 Days</li>
+        <li><span>🌹</span> Fresh Flowers Guarantee</li>
+        <li><span>⭐</span> 50+ Happy Customers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-md-3">
+            <a href="index.html" class="brand-logo">
+              <i class="fa-solid fa-fan"></i>
+              Bloom<span>ly</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="delivery-loc-btn" title="Click to change delivery city">
+              <span class="loc-flag">🇮🇳</span>
+              <div class="loc-info">
+                <span class="loc-label">Deliver To:</span>
+                <span class="loc-city">Chh. Sambhajinagar</span>
+              </div>
+              <i class="fa-solid fa-chevron-down text-muted ml-auto" style="font-size: 11px;"></i>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-2 mt-md-0">
+            <div class="search-wrapper">
+              <input type="text" id="searchitem" placeholder="Search roses, lilies, orchids, bouquets...">
+              <button aria-label="Search" onclick="window.location.href='shop.html'"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-2 mt-2 mt-md-0">
+            <ul class="header-actions">
+              <li class="header-action-item" onclick="showToast('Signed in as Guest')">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+              </li>
+              <li class="header-action-item cart-menu">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge-cart">0</span>
+                <span>Cart</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Clean Navigation Bar -->
+    <div class="main-nav-strip">
+      <div class="container">
+        <ul class="nav-menu-list">
+          <li class="nav-item active"><a href="index.html" class="nav-link-btn"><i class="fa-solid fa-house mr-1"></i> Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link-btn"><i class="fa-solid fa-fan mr-1"></i> Flowers</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Slider -->
+  <section class="hero-slider-section">
+    <div class="container">
+      <div class="hero-card">
+        <div>
+          <span class="hero-tagline">🌸 Fresh Farm Flowers</span>
+          <h1 class="hero-title">Hand-Delivered Fresh Flowers & Bouquets</h1>
+          <p class="hero-desc">
+            Decorate your Home with Fresh Flowers in <span class="current-city-name font-weight-bold text-danger">Chh. Sambhajinagar</span>
+          </p>
+          <div class="d-flex align-items-center gap-3">
+            <a href="shop.html" class="hero-btn">
+              <i class="fa-solid fa-bag-shopping"></i> Explore Flowers
+            </a>
+          </div>
+        </div>
+        <div class="hero-img-box d-none d-lg-block">
+          <img src="images/heroimage.png" alt="Bloomly Roses"
+            style="width: 320px; border-radius: 12px; box-shadow: var(--bf-shadow-lg);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Strip Tiles -->
+  <section class="category-strip-section">
+    <div class="container">
+      <h3 class="section-headline text-center mb-4">Explore by Flower Category</h3>
+      <div class="row justify-content-center">
+
+        <div class="col-6 col-md-3 mb-3">
+          <a href="shop.html" class="cat-tile">
+            <div class="cat-tile-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="cat-tile-name">All Flowers</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <a href="shop.html" class="cat-tile">
+            <div class="cat-tile-icon" style="color: #e11d48; background: #ffe4e6;"><i class="fa-solid fa-heart"></i></div>
+            <div class="cat-tile-name">Red Roses</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <a href="shop.html" class="cat-tile">
+            <div class="cat-tile-icon" style="color: #2563eb; background: #dbeafe;"><i class="fa-solid fa-spa"></i></div>
+            <div class="cat-tile-name">Orchid Stems</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <a href="shop.html" class="cat-tile">
+            <div class="cat-tile-icon" style="color: #059669; background: #d1fae5;"><i class="fa-solid fa-gem"></i></div>
+            <div class="cat-tile-name">Luxury Lilies</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="section-headline mb-1">Bestselling Bouquets in <span class="current-city-name text-danger">Chh.
+              Sambhajinagar</span></h2>
+          <p class="text-muted small">Hand-picked daily by local artisan florists for guaranteed 7-day freshness</p>
+        </div>
+        <a href="shop.html" class="btn btn-sm btn-outline-danger rounded-pill px-3 font-weight-bold">View All Bouquets
+          <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="row" id="productGridContainer">
+        <!-- Injected dynamically via js/bloomly.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Propositions / Guarantees -->
+  <section class="py-5"
+    style="background: #fff; border-top: 1px solid var(--bf-border); border-bottom: 1px solid var(--bf-border);">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div style="font-size: 32px; color: var(--bf-primary); margin-bottom: 12px;"><i
+              class="fa-solid fa-truck-fast"></i></div>
+          <h5 class="font-weight-bold">2-Hour Express Delivery</h5>
+          <p class="text-muted small">Order before 8:00 PM for prompt same-day delivery or book midnight delivery
+            surprises.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div style="font-size: 32px; color: #10b981; margin-bottom: 12px;"><i class="fa-solid fa-leaf"></i></div>
+          <h5 class="font-weight-bold">100% Farm Fresh Stems</h5>
+          <p class="text-muted small">Flowers are harvested and arranged in protective wrapping so blooms open pristine
+            at your doorstep.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div style="font-size: 32px; color: #d97706; margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h5 class="font-weight-bold">Secure Online Payments</h5>
+          <p class="text-muted small">Seamless payments with UPI, NetBanking, Credit/Debit Cards, and International
+            Cards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide-Out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Gift Cart (<span class="cart-count-num">0</span>)</h3>
+      <button class="btn-close-drawer" id="closeCartDrawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items-container" id="cartItemsList"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotalDisplay">₹0</span>
+      </div>
+      <button class="btn-checkout" onclick="checkoutOrder()">
+        Proceed to Checkout <i class="fa-solid fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- City Selection Modal -->
+  <div class="city-modal-overlay" id="cityModalOverlay">
+    <div class="city-modal-box">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="font-weight-bold m-0 text-dark">Select Delivery City</h4>
+        <button class="btn btn-sm text-muted" id="closeCityModal" style="font-size: 20px;"><i
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p class="small text-muted">Choose destination city for accurate delivery timings</p>
+
+      <div class="city-search-box">
+        <input type="text" id="citySearchInput" placeholder="Search city (e.g. Chh. Sambhajinagar, Pune, Mumbai)...">
+      </div>
+
+      <h6 class="font-weight-bold text-muted small text-uppercase mb-2">Popular Delivery Cities</h6>
+      <div class="popular-cities-grid">
+        <div class="city-pill active" data-city="Chh. Sambhajinagar">📍 Chh. Sambhajinagar</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Help Widgets -->
+  <div class="floating-widgets">
+    <a href="https://api.whatsapp.com/send?phone=919823012345" target="_blank" class="floating-btn btn-whatsapp"
+      title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919823012345" class="floating-btn btn-call" title="Call Florist Support">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Bottom Tab Navigation -->
+  <nav class="mobile-bottom-nav">
+    <div class="mobile-nav-grid">
+      <a href="index.html" class="mobile-nav-link active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="mobile-nav-link">
+        <i class="fa-solid fa-fan"></i>
+        <span>Flowers</span>
+      </a>
+      <a href="javascript:void(0)" class="mobile-nav-link open-cart-btn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Cart (<span class="cart-count-num">0</span>)</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Website Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <div class="brand-logo mb-3 text-white">
+            <i class="fa-solid fa-fan text-danger"></i> Bloom<span class="text-light">ly</span>
+          </div>
+          <p class="small">
+            Bloomly is your trusted online flower shop. We hand-deliver fresh, exquisite bouquets and floral arrangements across Chh. Sambhajinagar with guaranteed freshness.
+          </p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="javascript:void(0)" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h5 class="footer-heading">Flower Collections</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Roses Collection</a></li>
+            <li><a href="shop.html">Lilies Bouquets</a></li>
+            <li><a href="shop.html">Orchid Stems</a></li>
+            <li><a href="shop.html">Carnations</a></li>
+            <li><a href="shop.html">Gerberas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5 class="footer-heading">Florist Studio & Support</h5>
+          <p class="small mb-1"><i class="fa-solid fa-location-dot mr-2 text-danger"></i> Bloomly Studio, Jalna Road, CIDCO, Chh. Sambhajinagar 431003</p>
+          <p class="small mb-1"><i class="fa-solid fa-phone mr-2 text-danger"></i> Call: +91 98230 12345</p>
+          <p class="small mb-3"><i class="fa-solid fa-envelope mr-2 text-danger"></i> support@bloomly.in</p>
+
+          <div class="payment-badges">
+            <span class="badge badge-light p-1">UPI</span>
+            <span class="badge badge-light p-1">Visa</span>
+            <span class="badge badge-light p-1">Mastercard</span>
+            <span class="badge badge-light p-1">Google Pay</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Bloomly. All rights reserved.</div>
+        <div>
+          <a href="index.html" class="text-muted mr-3">Home</a>
+          <a href="shop.html" class="text-muted">Flowers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bloomly.js"></script>
+</body>
+
+</html>

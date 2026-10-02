@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Delivery in Chh. Sambhajinagar | Bloomly</title>
+  <meta name="description"
+    content="Order fresh flowers online in Chh. Sambhajinagar with flower delivery. Bouquets, roses, lilies & floral hampers for birthdays, anniversaries & every occasion with Bloomly.">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Top USP Specialty Strip -->
+  <div class="speciality-strip">
+    <div class="container d-flex justify-content-center">
+      <ul class="speciality-items">
+        <li><span>🚚</span> Delivery in 7 Days</li>
+        <li><span>🌹</span> Fresh Flowers Guarantee</li>
+        <li><span>⭐</span> 50+ Happy Customers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="index.html" class="brand-logo">
+              <i class="fa-solid fa-fan"></i>
+              Bloom<span>ly</span>
+            </a>
+          </div>
+
+          <!-- Location Picker -->
+          <div class="col-6 col-md-3">
+            <div class="delivery-loc-btn" title="Click to change delivery city">
+              <span class="loc-flag">🇮🇳</span>
+              <div class="loc-info">
+                <span class="loc-label">Deliver To:</span>
+                <span class="loc-city">Chh. Sambhajinagar</span>
+              </div>
+              <i class="fa-solid fa-chevron-down text-muted ml-auto" style="font-size: 11px;"></i>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="col-12 col-md-4 mt-2 mt-md-0">
+            <div class="search-wrapper">
+              <input type="text" id="searchitem" placeholder="Search roses, lilies, orchids, combos...">
+              <button aria-label="Search" onclick="renderProducts()"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+
+          <!-- User Actions -->
+          <div class="col-12 col-md-2 mt-2 mt-md-0">
+            <ul class="header-actions">
+              <li class="header-action-item" onclick="showToast('Welcome to Bloomly Guest Account')">
+                <i class="fa-regular fa-user"></i>
+                <span>Sign In</span>
+              </li>
+              <li class="header-action-item cart-menu">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge-cart">0</span>
+                <span>Cart</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Clean Navigation Bar -->
+    <div class="main-nav-strip">
+      <div class="container">
+        <ul class="nav-menu-list">
+          <li class="nav-item"><a href="index.html" class="nav-link-btn"><i class="fa-solid fa-house mr-1"></i> Home</a>
+          </li>
+          <li class="nav-item active"><a href="shop.html" class="nav-link-btn"><i class="fa-solid fa-fan mr-1"></i>
+              Flowers</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb & City Header Section -->
+  <section class="page-intro-section">
+    <div class="container">
+      <ul class="bf-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa-solid fa-angle-right" style="font-size: 10px;"></i></li>
+        <li><a href="shop.html">Maharashtra</a></li>
+        <li><i class="fa-solid fa-angle-right" style="font-size: 10px;"></i></li>
+        <li><a href="shop.html" class="current-city-name">Chh. Sambhajinagar</a></li>
+        <li><i class="fa-solid fa-angle-right" style="font-size: 10px;"></i></li>
+        <li class="text-dark font-weight-bold">Flowers</li>
+      </ul>
+
+      <div class="page-title-row">
+        <div>
+          <h1 class="page-main-heading">Send Flowers to <span class="current-city-name text-danger">Chh.
+              Sambhajinagar</span> | Trusted Florist & Gift Shop</h1>
+          <p class="page-subtext">
+            As a trusted online flower shop and florist in Chh. Sambhajinagar, Bloomly hand-delivers fresh bouquets and
+            floral arrangements right across the city.
+          </p>
+        </div>
+        <div>
+          <span class="delivery-badge-pill">
+            <i class="fa-solid fa-circle-check"></i> Fresh Flowers Guaranteed
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Chips & Sorting Toolbar -->
+  <section class="filter-toolbar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+          <div class="chips-container">
+            <button class="filter-chip active" data-filter="all">🌸 All Flowers</button>
+            <button class="filter-chip" data-filter="roses">🌹 Roses</button>
+            <button class="filter-chip" data-filter="lilies">🌺 Lilies</button>
+            <button class="filter-chip" data-filter="orchids">🪻 Orchids</button>
+            <button class="filter-chip" data-filter="carnations">🌷 Carnations</button>
+            <button class="filter-chip" data-filter="gerberas">🌻 Gerberas</button>
+            <button class="filter-chip" data-filter="under1000">🏷️ Under ₹1,000</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sort-and-count">
+            <span class="item-count-text" id="itemCountDisplay">12 Items</span>
+            <select class="sort-select" id="sortSelect">
+              <option value="recommended">⭐ Recommended</option>
+              <option value="low-to-high">Price: Low to High</option>
+              <option value="high-to-low">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Grid Section -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="row" id="productGridContainer">
+        <!-- Injected via js/bloomly.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Chh. Sambhajinagar Delivery Guide & Information Table -->
+  <section class="city-guide-section">
+    <div class="container">
+
+      <div class="guide-box">
+        <h2 class="section-headline">Send Flowers Online in Chh. Sambhajinagar - Delivery to Town, CIDCO & Cantonment
+        </h2>
+        <p>
+          We deliver fresh flowers across all of Chh. Sambhajinagar. Our reach covers the Town core, Cantonment
+          precinct, CIDCO N-1 through N-12, Shahgunj, Garkheda, and extends to Waluj, Shendra, and Chikalthana MIDC
+          industrial zones.
+        </p>
+
+        <h4 class="mt-4 mb-3 font-weight-bold">Key Occasions in the Chh. Sambhajinagar Year</h4>
+        <table class="guide-table">
+          <thead>
+            <tr>
+              <th>Occasion</th>
+              <th>Best Sent To (Chh. Sambhajinagar Area)</th>
+              <th>What to Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Birthday surprise</strong></td>
+              <td>CIDCO N1-N12 & Cantonment homes</td>
+              <td>Bouquet + chocolate gift hamper</td>
+            </tr>
+            <tr>
+              <td><strong>Chh. Sambhajinagar wedding</strong></td>
+              <td>Garkheda & Shahgunj family residences</td>
+              <td>Wedding flowers + luxury orchids & lilies</td>
+            </tr>
+            <tr>
+              <td><strong>Anniversary</strong></td>
+              <td>Jalna Road & Beed Bypass colonies</td>
+              <td>Roses with gourmet chocolates</td>
+            </tr>
+            <tr>
+              <td><strong>Ganesh Chaturthi / Gudi Padwa</strong></td>
+              <td>Community pandals & residences</td>
+              <td>Festive saffron-and-gold Marathwada arrangement</td>
+            </tr>
+            <tr>
+              <td><strong>MIDC Corporate Welcome</strong></td>
+              <td>Waluj & Shendra MIDC offices</td>
+              <td>Institutional bouquet, fixed-time delivery</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="guide-box">
+        <h2 class="section-headline">Frequently Asked Questions</h2>
+
+        <div class="faq-item active">
+          <div class="faq-header">
+            <span>1) Can I send flowers to Chh. Sambhajinagar from another city or abroad?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Absolutely! You can send flowers to Chh. Sambhajinagar from anywhere in India (Mumbai, Pune, Delhi,
+            Bangalore) or abroad (Dubai, USA, UK, Canada). Just provide the recipient's address, and Bloomly will ensure
+            pristine doorstep delivery.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>2) Is there delivery available in Chh. Sambhajinagar?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Yes, we offer fresh flower delivery across all major locations in Chh. Sambhajinagar.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>3) Can I customize my flower delivery with chocolates and teddy bears?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Yes, you can pair any floral bouquet with teddy bears, Cadbury/Ferrero Rocher chocolates, dry fruits, and
+            personalized message greeting cards.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>4) How does Bloomly guarantee flower freshness?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Our local florists hand-craft each arrangement using fresh-cut stems in bud form on the day of delivery,
+            ensuring vibrant colors and long-lasting freshness at the recipient's doorstep.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Slide-Out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Gift Cart (<span class="cart-count-num">0</span>)</h3>
+      <button class="btn-close-drawer" id="closeCartDrawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items-container" id="cartItemsList">
+      <!-- Injected dynamically -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotalDisplay">₹0</span>
+      </div>
+      <button class="btn-checkout" onclick="checkoutOrder()">
+        Proceed to Checkout <i class="fa-solid fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- City Selection Modal -->
+  <div class="city-modal-overlay" id="cityModalOverlay">
+    <div class="city-modal-box">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="font-weight-bold m-0 text-dark">Select Delivery City</h4>
+        <button class="btn btn-sm text-muted" id="closeCityModal" style="font-size: 20px;"><i
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p class="small text-muted">Choose destination city to check available flower bouquets & delivery slots</p>
+
+      <div class="city-search-box">
+        <input type="text" id="citySearchInput" placeholder="Search city (e.g. Chh. Sambhajinagar, Pune, Mumbai)...">
+      </div>
+
+      <h6 class="font-weight-bold text-muted small text-uppercase mb-2">Popular Cities in Maharashtra & India</h6>
+      <div class="popular-cities-grid">
+        <div class="city-pill active" data-city="Chh. Sambhajinagar">📍 Chh. Sambhajinagar</div>
+        <div class="city-pill" data-city="Pune">📍 Pune</div>
+        <div class="city-pill" data-city="Mumbai">📍 Mumbai</div>
+        <div class="city-pill" data-city="Nashik">📍 Nashik</div>
+        <div class="city-pill" data-city="Nagpur">📍 Nagpur</div>
+        <div class="city-pill" data-city="Nanded">📍 Nanded</div>
+        <div class="city-pill" data-city="Delhi">📍 Delhi NCR</div>
+        <div class="city-pill" data-city="Bengaluru">📍 Bengaluru</div>
+        <div class="city-pill" data-city="Hyderabad">📍 Hyderabad</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Help Widgets (WhatsApp & Call) -->
+  <div class="floating-widgets">
+    <a href="https://api.whatsapp.com/send?phone=919823012345" target="_blank" class="floating-btn btn-whatsapp"
+      title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919823012345" class="floating-btn btn-call" title="Call Florist Support">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Bottom Tab Navigation -->
+  <nav class="mobile-bottom-nav">
+    <div class="mobile-nav-grid">
+      <a href="index.html" class="mobile-nav-link">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="mobile-nav-link active">
+        <i class="fa-solid fa-fan"></i>
+        <span>Flowers</span>
+      </a>
+      <a href="javascript:void(0)" class="mobile-nav-link open-cart-btn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Cart (<span class="cart-count-num">0</span>)</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Website Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <div class="brand-logo mb-3 text-white">
+            <i class="fa-solid fa-fan text-danger"></i> Bloom<span class="text-light">ly</span>
+          </div>
+          <p class="small">
+            Bloomly is your trusted online florist delivering hand-crafted fresh bouquets, orchids, roses, and custom
+            floral arrangements across Chh. Sambhajinagar with guaranteed freshness.
+          </p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="javascript:void(0)" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h5 class="footer-heading">Flower Collections</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Roses Delivery</a></li>
+            <li><a href="shop.html">Lilies Bouquets</a></li>
+            <li><a href="shop.html">Orchid Stems</a></li>
+            <li><a href="shop.html">Carnations</a></li>
+            <li><a href="shop.html">Gerberas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5 class="footer-heading">Customer Care & Support</h5>
+          <p class="small mb-1"><i class="fa-solid fa-location-dot mr-2 text-danger"></i> Bloomly Studio, Jalna Road,
+            CIDCO, Chh. Sambhajinagar 431003</p>
+          <p class="small mb-1"><i class="fa-solid fa-phone mr-2 text-danger"></i> Phone: +91 98230 12345</p>
+          <p class="small mb-3"><i class="fa-solid fa-envelope mr-2 text-danger"></i> Email: support@bloomly.in</p>
+
+          <div class="payment-badges">
+            <span class="small text-white mr-2">100% Secure Checkout:</span>
+            <span class="badge badge-light p-1">UPI</span>
+            <span class="badge badge-light p-1">Visa</span>
+            <span class="badge badge-light p-1">Mastercard</span>
+            <span class="badge badge-light p-1">NetBanking</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Bloomly. All rights reserved. Fresh Flower Delivery.</div>
+        <div>
+          <a href="index.html" class="text-muted mr-3">Home</a>
+          <a href="shop.html" class="text-muted">Flowers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bloomly.js"></script>
+</body>
+
+</html>
